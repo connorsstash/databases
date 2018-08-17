@@ -1,0 +1,90 @@
+MariaDB [z1761994]> source Assignment7.sql;
+Query OK, 0 rows affected (0.09 sec)
+
+Query OK, 0 rows affected (0.14 sec)
+
+Query OK, 0 rows affected (0.53 sec)
+
+Query OK, 1 row affected (0.04 sec)
+
+Query OK, 1 row affected (0.05 sec)
+
+Query OK, 1 row affected (0.04 sec)
+
+Query OK, 1 row affected (0.08 sec)
+
+Query OK, 1 row affected (0.03 sec)
+
++---------+-----------+----------+
+| ownerID | firstName | lastName |
++---------+-----------+----------+
+|     100 | Jonny     | Mack     |
+|     101 | Tlyer     | Seafeild |
+|     102 | Tiffany   | Graham   |
+|     103 | Jonny     | Majcher  |
+|     104 | Nick      | Pekovic  |
++---------+-----------+----------+
+5 rows in set (0.00 sec)
+
+Query OK, 0 rows affected (0.46 sec)
+
+Query OK, 1 row affected (0.04 sec)
+
+Query OK, 1 row affected (0.21 sec)
+
+Query OK, 1 row affected (0.08 sec)
+
+Query OK, 1 row affected (0.07 sec)
+
+Query OK, 1 row affected, 1 warning (0.10 sec)
+
++-------+---------+------------+---------+
+| petID | petName | petDOB     | OwnerID |
++-------+---------+------------+---------+
+|     1 | Jonnny  | 2003-05-12 |     101 |
+|     2 | Buster  | 2009-06-12 |     101 |
+|     3 | Roufus  | 2017-02-04 |     102 |
+|     4 | Clifard | 1990-01-01 |     104 |
+|     5 | Tigger  | 0000-00-00 |     103 |
++-------+---------+------------+---------+
+5 rows in set (0.00 sec)
+
+Query OK, 0 rows affected (0.68 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+Query OK, 2 rows affected (0.03 sec)
+Rows matched: 2  Changed: 2  Warnings: 0
+
+Query OK, 1 row affected (0.10 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+Query OK, 1 row affected (0.02 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+Query OK, 1 row affected (0.07 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
++-------+---------+------------+---------+-------------+
+| petID | petName | petDOB     | OwnerID | type_of_pet |
++-------+---------+------------+---------+-------------+
+|     1 | Jonnny  | 2003-05-12 |     101 | cat         |
+|     2 | Buster  | 2009-06-12 |     101 | cat         |
+|     3 | Roufus  | 2017-02-04 |     102 | dog         |
+|     4 | Clifard | 1990-01-01 |     104 | tiger       |
+|     5 | Tigger  | 0000-00-00 |     103 | lizard      |
++-------+---------+------------+---------+-------------+
+5 rows in set (0.00 sec)
+
+ERROR 1050 (42S01): Table 'Owner_Relationships' already exists
++-------------------+------------------+---------+
+| Owners First Name | Owners Last Name | Pet     |
++-------------------+------------------+---------+
+| Tlyer             | Seafeild         | Jonnny  |
+| Tlyer             | Seafeild         | Buster  |
+| Tiffany           | Graham           | Roufus  |
+| Nick              | Pekovic          | Clifard |
+| Jonny             | Majcher          | Tigger  |
++-------------------+------------------+---------+
+5 rows in set (0.00 sec)
+
+MariaDB [z1761994]> \t;
