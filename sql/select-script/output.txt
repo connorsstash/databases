@@ -1,0 +1,281 @@
+Connor Pekoic
+466 Section 3
+G Brown
+M W F 11-12:15
+
+MariaDB [BabyName]> source input.sql
+Database changed
++--------------------+
+| Tables_in_BabyName |
++--------------------+
+| BabyName           |
++--------------------+
+1 row in set (0.00 sec)
+
++--------+-------------+------+-----+---------+-------+
+| Field  | Type        | Null | Key | Default | Extra |
++--------+-------------+------+-----+---------+-------+
+| name   | varchar(15) | NO   | PRI | NULL    |       |
+| count  | int(11)     | YES  |     | NULL    |       |
+| gender | char(1)     | NO   | PRI | NULL    |       |
+| year   | smallint(6) | NO   | PRI | NULL    |       |
+| place  | char(2)     | NO   | PRI | NULL    |       |
++--------+-------------+------+-----+---------+-------+
+5 rows in set (0.00 sec)
+
++------+
+| year |
++------+
+| 1980 |
+| 1986 |
+| 1987 |
+| 1988 |
+| 1989 |
+| 1990 |
+| 1991 |
+| 1992 |
+| 1993 |
+| 1994 |
+| 1995 |
+| 1996 |
+| 1997 |
+| 1998 |
+| 1999 |
+| 2000 |
+| 2001 |
+| 2002 |
+| 2003 |
+| 2004 |
+| 2005 |
+| 2006 |
+| 2007 |
+| 2008 |
+| 2009 |
+| 2010 |
+| 2011 |
+| 2012 |
+| 2013 |
+| 2014 |
+| 2015 |
+| 1913 |
+| 1915 |
+| 1916 |
+| 1917 |
+| 1919 |
+| 1920 |
+| 1921 |
+| 1922 |
+| 1923 |
+| 1924 |
+| 1927 |
+| 1930 |
+| 1937 |
+| 1938 |
+| 1939 |
+| 1941 |
+| 1942 |
+| 1943 |
+| 1945 |
++------+
+50 rows in set (0.00 sec)
+
++--------------+
+| name         |
++--------------+
+| Aadam        |
+| Aadil        |
+| Aakash       |
+| Aalayah      |
+| Aaleeyah     |
+| Aaleyah      |
+| Aaliah       |
+| Aalim        |
+| Aaliya       |
+| Aaliyah      |
+| Aaliyha      |
+| Aalyah       |
+| Aalyiah      |
+| Aaminah      |
+| Aamir        |
+| Aamna        |
+| Aaren        |
+| Aarianna     |
+| Aaric        |
+| Aariel       |
+| Aarika       |
+| Aarin        |
+| Aarion       |
+| Aarionna     |
+| Aaris        |
+| Aaron        |
+| Aaronjames   |
+| Aaronmichael |
+| Aarron       |
+| Aarthi       |
+| Aarti        |
+| Aaryn        |
+| Aasha        |
+| Aashka       |
+| Aashna       |
+| Aasia        |
+| Aasim        |
+| Aasin        |
+| Abagael      |
+| Abagail      |
+| Abagale      |
+| Abagayle     |
+| Abaigeal     |
+| Abbagail     |
+| Abbas        |
+| Abbe         |
+| Abbegail     |
+| Abbey        |
+| Abbi         |
+| Abbie        |
++--------------+
+50 rows in set (0.00 sec)
+
++------------+--------+------+---------+
+| Max(count) | gender | year | name    |
++------------+--------+------+---------+
+|      25150 | F      | 1996 | Aalayah |
+|      38364 | M      | 1996 | Aadam   |
++------------+--------+------+---------+
+2 rows in set (0.00 sec)
+
++------+-------+--------+------+-------+
+| name | count | gender | year | place |
++------+-------+--------+------+-------+
+| Luke |     5 | M      | 1910 | GA    |
+| Luke |     5 | M      | 1910 | AL    |
+| Luke |     5 | M      | 1911 | NY    |
+| Luke |     5 | M      | 1911 | PA    |
+| Luke |     5 | M      | 1911 | OK    |
+| Luke |     5 | M      | 1912 | TN    |
+| Luke |     5 | M      | 1912 | GA    |
+| Luke |     5 | M      | 1912 | MA    |
+| Luke |     5 | M      | 1912 | TX    |
+| Luke |     5 | M      | 1913 | MS    |
+| Luke |     5 | M      | 1913 | MA    |
+| Luke |     5 | M      | 1913 | TN    |
+| Luke |     5 | M      | 1914 | MA    |
+| Luke |     5 | M      | 1914 | MD    |
+| Luke |     5 | M      | 1915 | IL    |
+| Luke |     5 | M      | 1915 | MS    |
+| Luke |     5 | M      | 1915 | SC    |
+| Luke |     5 | M      | 1917 | AR    |
+| Luke |     5 | M      | 1917 | WV    |
+| Luke |     5 | M      | 1917 | IL    |
+| Luke |     5 | M      | 1917 | SC    |
+| Luke |     5 | M      | 1918 | OK    |
+| Luke |     5 | M      | 1918 | SC    |
+| Luke |     5 | M      | 1918 | AL    |
+| Luke |     5 | M      | 1919 | KY    |
+| Luke |     5 | M      | 1919 | TN    |
+| Luke |     5 | M      | 1920 | IL    |
+| Luke |     5 | M      | 1921 | KY    |
+| Luke |     5 | M      | 1922 | OK    |
+| Luke |     5 | M      | 1922 | OH    |
+| Luke |     5 | M      | 1922 | MO    |
+| Luke |     5 | M      | 1923 | IL    |
+| Luke |     5 | M      | 1923 | SC    |
+| Luke |     5 | M      | 1924 | CA    |
+| Luke |     5 | M      | 1924 | OK    |
+| Luke |     5 | M      | 1924 | MS    |
+| Luke |     5 | M      | 1925 | WI    |
+| Luke |     5 | M      | 1925 | TX    |
+| Luke |     5 | M      | 1925 | TN    |
+| Luke |     5 | M      | 1925 | IL    |
+| Luke |     5 | M      | 1926 | TN    |
+| Luke |     5 | M      | 1926 | AR    |
+| Luke |     5 | M      | 1926 | VA    |
+| Luke |     5 | M      | 1927 | MO    |
+| Luke |     5 | M      | 1927 | FL    |
+| Luke |     5 | M      | 1928 | KY    |
+| Luke |     5 | M      | 1928 | TX    |
+| Luke |     5 | M      | 1929 | OH    |
+| Luke |     5 | M      | 1930 | NC    |
+| Luke |     5 | M      | 1930 | AR    |
++------+-------+--------+------+-------+
+50 rows in set (0.00 sec)
+
++-------------+
+| count(name) |
++-------------+
+|     7601706 |
++-------------+
+1 row in set (0.00 sec)
+
++-------------+------+
+| count(name) | year |
++-------------+------+
+|       64807 | 1960 |
++-------------+------+
+1 row in set (0.00 sec)
+
++------------+--------+------+
+| NumOfNames | gender | year |
++------------+--------+------+
+|      38330 | F      | 1964 |
+|      27125 | M      | 1964 |
++------------+--------+------+
+2 rows in set (0.00 sec)
+
++-------------+-------+
+| count(name) | place |
++-------------+-------+
+|       27143 | AK    |
+|      128556 | AL    |
+|       97560 | AR    |
+|      108599 | AZ    |
+|      361128 | CA    |
+|      101403 | CO    |
+|       78039 | CT    |
+|       53933 | DC    |
+|       30892 | DE    |
+|      191928 | FL    |
+|      172144 | GA    |
+|       52696 | HI    |
+|       89476 | IA    |
+|       55018 | ID    |
+|      218033 | IL    |
+|      131719 | IN    |
+|       89748 | KS    |
+|      113070 | KY    |
+|      142233 | LA    |
+|      112605 | MA    |
+|      104849 | MD    |
+|       48713 | ME    |
+|      173590 | MI    |
+|      107818 | MN    |
+|      131478 | MO    |
+|      109681 | MS    |
+|       44060 | MT    |
+|      163740 | NC    |
+|       44411 | ND    |
+|       68616 | NE    |
+|       37486 | NH    |
+|      144611 | NJ    |
+|       72585 | NM    |
+|       43473 | NV    |
+|      282486 | NY    |
+|      185277 | OH    |
+|      111492 | OK    |
+|       83676 | OR    |
+|      188681 | PA    |
+|       38789 | RI    |
+|      112529 | SC    |
+|       45559 | SD    |
+|      132832 | TN    |
+|      330672 | TX    |
+|     1858689 | US    |
+|       84193 | UT    |
+|      139163 | VA    |
+|       28006 | VT    |
+|      116631 | WA    |
+|      110188 | WI    |
++-------------+-------+
+50 rows in set (0.00 sec)
+
+MariaDB [BabyName]> Ctrl-C -- exit!
+Aborted
