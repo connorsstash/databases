@@ -1,0 +1,6 @@
+--- Making a database with MariaDB (used at NIU). ---
+1. show databases;
+2. use z1761994;
+3. source Alexamara.sql;
+4. show tables;
+
