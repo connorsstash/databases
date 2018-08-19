@@ -3,6 +3,10 @@ Connor Pekovic
 Databases 466 Section 2
 Assignment 7 -  SQL DDL - creating a database.
 Due Date: 3/28/2018
+
+Purpose:  This manages a simple database for a vetnarian office.  We create tables,
+insert data, display the pets table, add a column to the pets table, and create a table
+from parts of both tables.
 */
 
 /* 1. Deleting all the tables we're going to be making
