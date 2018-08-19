@@ -1,6 +1,6 @@
 /*
 Connor Pekovic
-Databases 466 Section 2
+Databases 466 Section 2 Northern Illinois University
 Assignment 7 -  SQL DDL - creating a database.
 Due Date: 3/28/2018
 
